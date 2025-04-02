@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách môn học</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 3 Solution</title>
+  <!-- Bootstrap 3 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Danh sách môn học</h1>
-    <div class="container">
-        <section class="box">
-            <div class="title">Lập trình C</div>
-            <p>Lập trình C là ngôn ngữ lập trình phổ biến, được sử dụng rộng rãi trong phát triển phần mềm hệ thống và ứng dụng nhúng.</p>
-        </section>
-        <section class="box">
-            <div class="title">DSA</div>
-            <p>Cấu trúc dữ liệu và giải thuật (DSA) là nền tảng quan trọng trong khoa học máy tính, giúp tối ưu hóa hiệu suất chương trình.</p>
-        </section>
-        <section class="box">
-            <div class="title">OOP</div>
-            <p>Lập trình hướng đối tượng (OOP) là mô hình lập trình giúp tổ chức mã nguồn một cách linh hoạt, dễ bảo trì và mở rộng.</p>
-        </section>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="navbar-menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav visible-xs">
+          <li><a href="#chicken" class="text-center">Chicken</a></li>
+          <li><a href="#beef" class="text-center">Beef</a></li>
+          <li><a href="#sushi" class="text-center">Sushi</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <h1 id="our-menu" class="text-center">Our Menu</h1>
+
+  <!-- Main Content (Graded: Single Tall Section) -->
+  <div class="container">
+    <div class="row">
+      <div id="long-section" class="col-xs-12">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- More content to make it scrollable -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional: 3 Sections (Chicken, Beef, Sushi) -->
+  <div class="container optional-section">
+    <div class="row">
+      <section id="chicken" class="col-md-4 col-sm-6 col-xs-12">
+        <h3 class="text-center">Chicken</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#our-menu" class="back-to-top">Back to Top</a>
+      </section>
+      <section id="beef" class="col-md-4 col-sm-6 col-xs-12">
+        <h3 class="text-center">Beef</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#our-menu" class="back-to-top">Back to Top</a>
+      </section>
+      <section id="sushi" class="col-md-4 col-sm-12 col-xs-12">
+        <h3 class="text-center">Sushi</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#our-menu" class="back-to-top">Back to Top</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
